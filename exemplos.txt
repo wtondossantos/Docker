@@ -1,0 +1,4 @@
+-- Clone repository by running Git in a container
+1 - docker run --name repo alpine/git clone \ https://github.com/docker/getting-started.git docker cp repo:/git/getting-started/ .
+
+
