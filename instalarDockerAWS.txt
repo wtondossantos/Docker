@@ -1,0 +1,19 @@
+Install Docker na Instância AMI
+
+	1. Atualizar e instalar pacotes na instância.
+		sudo yum update -y
+	2. Instalar o Docker Community Edition mais recente.
+		sudo yum install docker -y
+	3. Inicializar o serviço do Docker.
+		sudo service docker start
+	4. Adicionar o usuário ec2-user para o grupo docker então você pode executar os comandos Docker sem usar "sudo".
+		sudo usermod -a -G docker ec2-user
+	5. Verificar se o ec2-user pode rodar os comandos do Docker sem "sudo"
+		docker --version 
+		Ou
+		docker info
+	
+		
+	
+	
+	
